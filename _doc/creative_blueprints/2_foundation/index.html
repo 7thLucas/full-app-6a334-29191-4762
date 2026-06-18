@@ -1,0 +1,85 @@
+<style>
+  .mode-landscape .sl-main   { flex-direction: row; }
+  .mode-portrait  .sl-main   { flex-direction: column; }
+  .mode-landscape .sl-left   { width: 55%; }
+  .mode-portrait  .sl-left   { width: 100%; }
+  .mode-landscape .sl-visual { width: 45%; display: flex; }
+  .mode-portrait  .sl-visual { display: none; }
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="h-full flex flex-col p-10 gap-5">
+
+    <!-- Header -->
+    <div>
+      <span class="text-xs font-bold text-teal-700 tracking-widest uppercase">Foundation</span>
+      <h2 class="text-3xl font-black text-slate-900 leading-tight">Why It Exists</h2>
+    </div>
+
+    <!-- Main content -->
+    <div class="sl-main flex flex-1 gap-5 min-h-0">
+
+      <!-- Left: Problem + Solution stacked -->
+      <div class="sl-left flex flex-col gap-4 min-h-0">
+
+        <!-- Problem -->
+        <div class="flex-1 bg-slate-900 rounded-2xl p-6 flex flex-col justify-between min-h-0">
+          <div>
+            <span class="inline-block bg-rose-500 text-white text-xs font-bold px-3 py-1 rounded-full mb-4">The Problem</span>
+            <p class="text-sm font-semibold text-white mb-3">Affiliate sites have a trust problem</p>
+            <ul class="space-y-2">
+              <li class="flex items-start gap-2">
+                <span class="text-rose-400 text-xs mt-0.5 flex-shrink-0">&#x2715;</span>
+                <span class="text-xs text-slate-300">Generic roundups drown in algorithmic noise — shoppers bounce without clicking</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-rose-400 text-xs mt-0.5 flex-shrink-0">&#x2715;</span>
+                <span class="text-xs text-slate-300">Spammy UX erodes trust; click-through rates stay stuck at industry-low levels</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-rose-400 text-xs mt-0.5 flex-shrink-0">&#x2715;</span>
+                <span class="text-xs text-slate-300">No editorial voice, no loyalty — visitors don't return and commissions stay thin</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Solution -->
+        <div class="flex-1 bg-teal-800 rounded-2xl p-6 flex flex-col justify-between min-h-0">
+          <div>
+            <span class="inline-block bg-white text-teal-800 text-xs font-bold px-3 py-1 rounded-full mb-4">The Solution</span>
+            <p class="text-sm font-semibold text-white mb-3">Curation as the competitive moat</p>
+            <ul class="space-y-2">
+              <li class="flex items-start gap-2">
+                <span class="text-teal-300 text-xs mt-0.5 flex-shrink-0">&#x2713;</span>
+                <span class="text-xs text-teal-100">Every product hand-picked — shoppers trust an editor, not an algorithm</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-teal-300 text-xs mt-0.5 flex-shrink-0">&#x2713;</span>
+                <span class="text-xs text-teal-100">Editorial product pages build purchase intent before the affiliate click</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-teal-300 text-xs mt-0.5 flex-shrink-0">&#x2713;</span>
+                <span class="text-xs text-teal-100">Clean, distraction-free UX channels attention directly to the buy link</span>
+              </li>
+            </ul>
+          </div>
+          <div class="bg-teal-700 rounded-lg p-3 mt-3">
+            <p class="text-xs text-white font-semibold">Trust &rarr; Click &rarr; Commission</p>
+            <p class="text-xs text-teal-200 mt-0.5">Higher editorial trust = higher CTR = more affiliate revenue. Carefulness is the brand and the strategy.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Right: Supporting visual -->
+      <div class="sl-visual rounded-2xl overflow-hidden bg-stone-100 flex-shrink-0">
+        <img
+          src="https://api.qb-deck.quantumbyte.ai/common/image-generation?prompt=calm%20editorial%20person%20browsing%20curated%20products%20on%20laptop%20at%20home%20minimal%20warm%20light%20trust%20and%20discovery"
+          class="w-full h-full object-cover"
+          alt="Shopper browsing curated products"
+        />
+      </div>
+
+    </div>
+  </div>
+</section>
